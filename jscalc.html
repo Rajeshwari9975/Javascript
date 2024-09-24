@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab</title>
+</head>
+<body>
+    <label>
+        Enter A Number
+    </label>
+    <input type="number" id ="is1"><br>
+    <label>Enter A Number 2</label>  
+    <input type="number" id ="is2">
+    <br>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+ 
+    
+    <output id="op"></output>
+    
+
+    <script>
+        function add(){
+            let a,b,res;
+            a =+ is1.value;
+            b =+ is2.value;
+            res=a+b;
+            op.value="result is "+res;
+            //ty.value="result is "+res;
+        }
+        function sub(){
+            let a,b,resu;
+            a =+ is1.value;
+            b =+ is2.value;
+            resu=a-b;
+            op.value="result is "+resu;
+        }
+        function mul(){
+            var x,y,mul;
+            x =+ is1.value;
+            y =+ is2.value;
+            mul = (x*y);
+            op.value = "result is "+mul;
+        }
+        function div()
+        {
+            let a,b,di;
+            a=+is1.value;
+            b=+is2.value;
+            di =(a/b);
+            op.value="the division is "+di;
+        }
+        
+    </script>
+</body>
+
+</html>
